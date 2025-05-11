@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>Pago con tarjeta</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: limegreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 400px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            color: #665;
+            font-size: 14px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .input-group input[type="text"] {
+            text-transform: uppercase;
+        }
+        .button {
+            width: 100%;
+            background-color: limegreen;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: darkgreen;
+        }
+        .extra-info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Pago con tarjeta</h2>
+        <p>Por favor, ingresa los detalles de tu tarjeta para completar la compra.</p>
+
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="cardNumber">Número de tarjeta</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9101 1121" required>
+            </div>
+            <div class="input-group">
+                <label for="fecha">Fecha de vencimiento</label>
+                <input type="text" id="fecha" name="fecha" placeholder="MM/AA" required>
+            </div>
+            <div class="input-group">
+                <label for="cvv">Código de seguridad (CVV)</label>
+                <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+            </div>
+          <a href="creppycubos.html" class="pagar">Pagar</a>
+        </form>
+
+        <div class="extra-info">
+            <p><strong>Consejos de seguridad:</strong></p>
+            <ul>
+                <li>Siempre verifica que estás en un sitio seguro (https://) antes de ingresar tu información.</li>
+                <li>No compartas tu información de tarjeta con nadie, especialmente por teléfono o correo electrónico.</li>
+            </ul>
+            <p>Si tienes dudas sobre cómo realizar el pago, contáctanos para asistencia.</p>
+        </div>
+    </div>
+</body>
+</html>
